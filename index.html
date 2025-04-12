@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIAZ - Paris Sportifs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>PARIAZ</h1>
+            <p>QUI AURA LE BON PARI ?</p>
+        </div>
+    </header>
+    
+
+    <section id="matchs" class="section">
+        <h2>L'AFFICHE DU WEEK-END ⚔️</h2>
+        <p>4ème journée CHAMPIONNAT R1</p>
+        <div class="matchs-container">
+            <div class="match">
+                <h3>JSSP vs 3 BASSINS FC</h3>
+                <p>Samedi 12 Avril 2025 / 19:30</p>
+        
+                <button onclick="afficherOptions(this)">Parier</button>
+
+                <!-- Options de pari à afficher au clic -->
+                <div class="options-pari" style="display: none; margin-top: 10px;">
+                    <button>JSSP</button>
+                    <button>NUL</button>
+                    <button>3 BASSINS FC</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function afficherOptions(button) {
+            const optionsDiv = button.nextElementSibling;
+            optionsDiv.style.display = (optionsDiv.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="buteurs" class="section">
+        <h2>Buteurs 🔥 </h2>
+        <p>Consultez les joueurs en forme !</p>
+        <div class="buteurs-container">
+            <div class="buteur">
+                <h3>VARDAPIN 
+    
+                </h3> 1 but en 3 matchs 
+        
+                <p>Equipe : JSSP</p>
+                <button>1 BUT</button>
+                <button>2 BUTS OU PLUS</button>
+        
+                
+               
+                <h3>DAMOUR  
+            
+                    </h3> 2 buts en 3 matchs 
+                
+                <p>Equipe : JSSP</p>
+                <button>1 BUT</button>
+                <button>2 BUTS OU PLUS</button>
+
+                <h3> AUTRE 
+                    <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu déroulant interactif</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    .dropdown-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      background-color: #1e90ff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #result-box {
+      margin-top: 30px;
+      background-color: #ffe135; /* jaune */
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    #result-box h3 {
+      margin-top: 0;
+    }
+
+    .options button {
+      margin: 10px 10px 0 0;
+      padding: 10px 16px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #1e90ff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .options button:hover {
+      background-color: #004fbb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown-container">
+
+    <!-- JSSP -->
+    <div class="dropdown">
+      <button class="dropdown-button">JSSP</button>
+      <div class="dropdown-content">
+        <a onclick="showOptions('MITHRA')">MITHRA</a>
+        <a onclick="showOptions('ANDO')">ANDO</a>
+        <a onclick="showOptions('FONTAINE JP')">FONTAINE JP</a>
+        <a onclick="showOptions('SIALA CHAMBA')">SIALA CHAMBA</a>
+        <a onclick="showOptions('TSITO')">TSITO</a>
+        <a onclick="showOptions('OUSSENI')">OUSSENI</a>
+        <a onclick="showOptions('AKASSOU')">AKASSOU</a>
+        <a onclick="showOptions('LAGARRIGUE')">LAGARRIGUE</a>
+        <a onclick="showOptions('HADDADOU')">HADDADOU</a>
+        <a onclick="showOptions('MDAHOMA')">MDAHOMA</a>
+        <a onclick="showOptions('MOURCHIDOU')">MOURCHIDOU</a>
+        <a onclick="showOptions('SOUEFOU ALI')">SOUEFOU ALI</a>
+      </div>
+    </div>
+
+    <!-- 3B FC -->
+    <div class="dropdown">
+      <button class="dropdown-button">3B FC</button>
+      <div class="dropdown-content">
+        <a onclick="showOptions('KONAN')">KONAN</a>
+        <a onclick="showOptions('KLEIN')">KLEIN</a>
+        <a onclick="showOptions('MONTEVILLE')">MONTEVILLE</a>
+        <a onclick="showOptions('NICLIN')">NICLIN</a>
+        <a onclick="showOptions('FRANCOIS')">FRANCOIS</a>
+        <a onclick="showOptions('LEON')">LEON</a>
+        <a onclick="showOptions('SOUTON')">SOUTON</a>
+        <a onclick="showOptions('PERON')">PERON</a>
+        <a onclick="showOptions('JACKSON')">JACKSON</a>
+        <a onclick="showOptions('SERTIER')">SERTIER</a>
+        <a onclick="showOptions('EDMOND')">EDMOND</a>
+        <a onclick="showOptions('PERSÉE')">PERSÉE</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Zone d'affichage -->
+  <div id="result-box">
+    <h3 id="player-name"></h3>
+    <div class="options">
+      <button>1 but</button>
+      <button>2 buts ou plus</button>
+    </div>
+  </div>
+
+  <script>
+    function showOptions(player) {
+      document.getElementById("player-name").innerText = "Options pour " + player;
+      document.getElementById("result-box").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
+                        
+                    
+                          
+                            
+                    
+    </section>
+
+    <section id="resultats" class="section">
+        <h2>Résultat du match 🚨 </h2>
+        <p>Suivez les résultats en direct !</p>
+        <div class="resultats-container">
+            <div class="resultat">
+                <h3>JSSP vs 3 BASSINS FC </h3>
+                <p>Score actuel : 3-1</p>
+                <div class="buteurs">
+                    <div class="equipe">
+                        <strong>JSSP :</strong>
+                        <ul>
+                            <li>🟢 ANDO <span class="minute">(1')</span></li>
+                            <li>🟢 VARDAPIN <span class="minute">(19')</span></li>
+                            <li>🟢 AKASSOU <span class="minute">(32')</span></li>
+                        </ul>
+                    </div>
+                    <div class="equipe">
+                        <strong>3 BASSINS FC :</strong>
+                        <ul>
+                            <li>🟢 NICLIN <span class="minute">(49')</span></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ZotPari by R7</p>
+    </footer>
+</body>
+</html>
